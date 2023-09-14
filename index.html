@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <title>Jogador-Do-Século</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div id="container-header">
-            <a href="#"><img src="img/coroa-100px.png" alt="coroa"></a>
-            <nav class="menu">
-                <ul class="links">
-                    <li><a href="#apresentacao">Início</a></li>
-                    <li><a href="#inicio-carreira">Carreira</a></li>
-                    <li><a href="#santos-fc">Santos</a></li>
-                    <li><a href="#selecao-brasileria">Seleção</a></li>
-                    <li><a href="#mil-gols">Mil gols</a></li>
-                    <li><a href="#final-de-carreira">Fim de Carreira</a></li>
-                </ul>
-            </nav>
+            <a href="#" id="coroa-link"><img src="img/coroa-100px.png" alt="coroa"></a>
+            <span class="fa-solid fa-bars" id="btn-abrir-modal"></span>
+            <div class="hide" id="fade">
+                <div class="container-menu" id="container-menu-mobile">
+                    <nav class="menu">
+                        <ul class="links">
+                            <li><a href="#apresentacao">Início</a></li>
+                            <li><a href="#inicio-carreira">Carreira</a></li>
+                            <li><a href="#santos-fc">Santos</a></li>
+                            <li><a href="#selecao-brasileria">Seleção</a></li>
+                            <li><a href="#mil-gols">Mil gols</a></li>
+                            <li><a href="#final-de-carreira">Fim de Carreira</a></li>
+                        </ul>
+                    </nav>
+                    <span id="btn-fechar-modal">X</span>
+                </div>
+            </div>
+            <div class="container-menu" id="container-menu-hide">
+                <nav class="menu">
+                    <ul class="links">
+                        <li><a href="#apresentacao">Início</a></li>
+                        <li><a href="#inicio-carreira">Carreira</a></li>
+                        <li><a href="#santos-fc">Santos</a></li>
+                        <li><a href="#selecao-brasileria">Seleção</a></li>
+                        <li><a href="#mil-gols">Mil gols</a></li>
+                        <li><a href="#final-de-carreira">Fim de Carreira</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>

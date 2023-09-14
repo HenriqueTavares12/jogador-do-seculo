@@ -19,8 +19,14 @@
     font-size: 16px;
 }
 
+html{
+    scroll-behavior: smooth;
+    
+}
+
 body{
     min-width: 300px;
+    
 }
 
 a{
@@ -88,17 +94,80 @@ section{
 
 #container-header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
     width: 100%;
     min-height: 15vh;
     padding: 2vw 2vh;
     background-color: #000;
 }
 
-#container-header img{
+#container-header #coroa-link{
     width: 6.25rem;
+    margin: 0 auto;
+}
+
+/* elementos que serão escondidos */
+.hide
+/* #fade,
+#btn-abrir-modal,
+#container-menu-hide */ {
+    visibility: hidden;
+}
+
+#btn-abrir-modal{
+    color: #FFF;
+    font-size: 2rem;
+    cursor: pointer;
+    order: -1;    
+}
+
+#fade{
+    position: fixed;
+    left: 0;
+    top: 1px;
+    width: 50vw;
+    height: 100%;
+    background-color: #000000d2;
+    z-index: 999;
+    transition: all .8s;
+}
+
+/* elementos escondidos com a classe hide */
+/* #modal.hide,
+#fade.hide,
+#btn-abrir-modal.hide, */
+#container-menu-hide.hide{
+    display: none;
+    pointer-events: none;
+}
+
+#fade.hide{
+    left: -50%;
+}
+
+
+#container-menu-mobile .menu ul.links{
+   padding: 20px;
+   flex-direction: column;
+   row-gap: 15px;
+}
+
+#btn-fechar-modal{
+    color: red;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.container-menu{
+    width: 100%;
 }
 
 .menu{
@@ -312,6 +381,21 @@ ul.links a:hover{
     }
 
     /* ======== CABEÇALHO ========*/
+    #container-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 100%;
+        min-height: 15vh;
+        padding: 2vw 2vh;
+        background-color: #000;
+    }
+
+    #btn-abrir-modal.hide{
+        display: none;
+    }
+    
 
     .menu{
         width: 100%;
@@ -328,7 +412,7 @@ ul.links a:hover{
     ul.links a{
         color: #fff;
         font-family: var(--fonte-links-ttulos);
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     /* ======== CONTEÚDO PRINCIPAL =======*/
@@ -358,6 +442,16 @@ ul.links a:hover{
     }
 
     /* ======== CABEÇALHO ========*/
+    #container-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 100%;
+        min-height: 15vh;
+        padding: 2vw 2vh;
+        background-color: #000;
+    }
     
     ul.links{
         column-gap: 2vw;
