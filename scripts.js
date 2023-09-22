@@ -39,7 +39,7 @@ function verificaTamanhoTela(){
  
 }
 
-verificarTela();
+verificaTamanhoTela();
 
 
 
