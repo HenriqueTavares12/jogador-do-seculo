@@ -36,6 +36,11 @@ function verificaTamanhoTela(){
            btnAbrirModal.classList.add('hide');
         }
     })
+ 
 }
 
-verificaTamanhoTela();
+
+
+
+
+

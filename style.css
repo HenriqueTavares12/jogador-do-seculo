@@ -51,6 +51,7 @@ p{
     padding: 2vw 2vh;
     width: 100%;
     font-size: 1.5rem;
+    line-height: 2.2rem;
 }
 
 section{
@@ -77,7 +78,7 @@ section{
 }
 
 .item-container picture{
-    width:100%;
+    max-width: 80vw;
 }
 
 .item-container picture source,
@@ -109,10 +110,7 @@ section{
 }
 
 /* elementos que serão escondidos */
-.hide
-/* #fade,
-#btn-abrir-modal,
-#container-menu-hide */ {
+.hide {
     visibility: hidden;
 }
 
@@ -186,7 +184,7 @@ ul.links{
 ul.links a{
     color: #fff;
     font-family: var(--fonte-links-ttulos);
-    font-size: 1.6em;
+    font-size: 2rem;
 }
 
 ul.links a:hover{
@@ -296,62 +294,9 @@ ul.links a:hover{
     color: darkgrey;
 }
 
-/* smartphone landscape max-width: 568px*/
-@media screen and (orientation: landscape) and (max-width: 568px) {
-    body{
-        max-width: 100vw;
-    }
-    .item-container picture{
-        max-width:80vw;
-    }
-
-/* ======== CONTEÚDO PRINCIPAL =======*/
-    #container-apresentacao{
-        row-gap: 2vh;
-    }
-    #box-ap-img picture{
-        width: 60vw;
-        display: block;
-        align-self: center;
-    }
-   
-}
-/* smartphone landscape min-width: 569px e max-width: 950px*/
-@media screen and (orientation: landscape) and (min-width: 569px) and (max-width: 950px) {
-    body{
-        max-width: 100vw;
-    }
-
-    .item-container picture{
-        max-width:60vw;
-    }
-
-
-    /* ======== CABEÇALHO ========*/
-
-    ul.links{
-        column-gap: 2%;
-        
-    }
-    
-    ul.links a{
-        font-size: 2.2em;
-    }
-    
-    /* ======== CONTEÚDO PRINCIPAL =======*/
-    #container-apresentacao{
-        row-gap: 2vh;
-    }
-    #box-ap-img picture{
-        width: 50vw;
-        display: block;
-        align-self: center;
-    }
-    
-}
 
 /* smartphones portrait min-width: 401px max-width: 700px*/
-@media screen and (min-width:401px) and (max-width:700px) {
+@media screen and (orientation: portrait) and (min-width:401px) and (max-width:700px) {
     ul.links{
         
         column-gap: 7%;
@@ -365,19 +310,12 @@ ul.links a:hover{
         max-width: 100vw;
     }
 
-    h1{
-        font-size: 4.5rem;
-    }
-    
     p{
-        text-align: left;
-        padding: 2vw 2vh;
-        width: 100%;
-        font-size: 2.2rem;
+        max-width: 80%;
     }
 
     .item-container picture{
-        max-width: 75vw;
+        max-width: 60vw;
     }
 
     /* ======== CABEÇALHO ========*/
@@ -409,11 +347,6 @@ ul.links a:hover{
         list-style: none;
     }
     
-    ul.links a{
-        color: #fff;
-        font-family: var(--fonte-links-ttulos);
-        font-size: 2em;
-    }
 
     /* ======== CONTEÚDO PRINCIPAL =======*/
     #container-apresentacao{
@@ -438,7 +371,7 @@ ul.links a:hover{
    }
 
    .item-container picture{
-        max-width: 30vw;
+        max-width: 40vw;
     }
 
     /* ======== CABEÇALHO ========*/
@@ -458,9 +391,6 @@ ul.links a:hover{
       
     }
     
-    ul.links a{
-        font-size: 2.8rem;
-    }
 
      /* ======== CONTEÚDO PRINCIPAL =======*/
     #container-apresentacao{
